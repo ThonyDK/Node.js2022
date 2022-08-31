@@ -47,7 +47,9 @@ console.log(divede);
 const letters = "abc";
 // Get me the character "c"
 
+const letter = letters.charAt(2);
 
+console.log(letter);
 
 
 // --------------------------------------
@@ -57,5 +59,9 @@ const fact = "You are learning javascript!";
 
 // capitalize the J in Javascript
 
+
+const replaceLetter = fact.replace("j","J");
+
+console.log(replaceLetter);
 
 // --------------------------------------
