@@ -73,9 +73,8 @@ const lettersExpanded = ["a", "b", "c", "d", "e", "f", "g", "h"];
 // log every second char in the array starting from b
 
 for ( let i = 1; i < lettersExpanded.length; i+=2) {
-    delete lettersExpanded[i]; 
+    console.log(lettersExpanded[i])
 }
-console.log(lettersExpanded)
 
 
 // --------------------------------------
