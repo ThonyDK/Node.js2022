@@ -61,7 +61,7 @@ console.log(removed);
 // You really like your daily diet from last exercise. Copy it to a new array called dinnerTray so you can give it to a friend.  
 
 const myVegetableList = ["tomato", "cucumber", "rocket"];
-copyMyVegetableList = [...myVegetableList]
+copyMyVegetableList = [...myVegetableList] //Spreadoperator: til at lave et nyt array. vi tager det ud og ligger det i en ny datastruktur.
 copyMyVegetableList.push();
 console.log(myVegetableList,copyMyVegetableList);
 
