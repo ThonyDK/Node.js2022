@@ -7,6 +7,8 @@ const express = require("express"); //importere express
 //Her laves en variabel hvor vi gemmer metoden ekspress i da vi gerne vil
 //benytte den i vores endpoint
 const app = express();
+//gør at bodyparser virker som vi bruger i et post request
+app.use(express.json());
 //Endpoint
 //Her benytter vi app med en GET for at få response på message vi gerne vil have 
 //Eksikveret
@@ -38,6 +40,11 @@ app.get("/actors", (req, res) => {
 //Task make a cups route
 app.get("/cups", (req, res) => {
     res.send({size: "Cups are small"});
+});
+
+app.post("/actors", (req, res) => {
+    console.log(req.body)
+    res.send({data: req.body})
 });
 
 //Set port 

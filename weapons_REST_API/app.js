@@ -46,9 +46,9 @@ app.put("/weapons/:id", (req, res) => {
 
 // Delete a weapon
 app.delete("/weapons/:id", (req, res) => {
-    // If not existing, return 404
+    // Find a weapon in the list
     const weapon = weapons.find(w => w.id === parseInt(req.params.id));
-    
+    // If not existing, return 404
     if (!weapon) 
     return res.status(404).send('The weapon is not found with that id');
 
