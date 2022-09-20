@@ -1,0 +1,13 @@
+maven        vs.      npm
+pom.xml           package.json
+
+    Sections / Responsibilities
+Meta data         Meta data       (Hvad det bygger til)
+Dependencies      Dependencies    (Hvad vi bruger )
+Life cycles       Script          ()
+
+
+npm install (i terminal efter du har lavet din package.json)
+
+npm install express       (man kan også skrive npm i express)
+

@@ -42,10 +42,22 @@ app.get("/cups", (req, res) => {
     res.send({size: "Cups are small"});
 });
 
+//const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ]
+//console.log(days[new Date().getDay()]);
+//console.log(new Date().getMonth()); 
+
+app.get("/date", (req, res) => { 
+    const date = new Date(Month, day);
+    console.log(date);  
+})
+
 app.post("/actors", (req, res) => {
-    console.log(req.body)
+    console.log(req.body);
     res.send({data: req.body})
 });
+
+//console.log(new Date());
+//console.log(new Date().toLocaleString());
 
 //Set port 
 //Her sætter vi på hvilken port vi gerne vil have skrevet ud på fx. localhost8080
