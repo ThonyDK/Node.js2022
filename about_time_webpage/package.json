@@ -1,0 +1,31 @@
+{
+  "name": "about_time_webpage",
+  "version": "1.0.0",
+  "description": "time website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThonyDK/Node.js2022.git"
+  },
+  "keywords": [
+    "time"
+  ],
+  "author": "Thony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThonyDK/Node.js2022/issues"
+  },
+  "homepage": "https://github.com/ThonyDK/Node.js2022#readme",
+  "name": "time-page",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "scripts": {
+    "start-dev": "nodemon app.js",
+    "start-prod": "node app.js"
+  }
+}
