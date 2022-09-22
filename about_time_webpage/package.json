@@ -1,11 +1,8 @@
 {
-  "name": "about_time_webpage",
   "version": "1.0.0",
   "description": "time website",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
   "repository": {
     "type": "git",
     "url": "https://github.com/ThonyDK/Node.js2022/tree/main/about_time_webpage"

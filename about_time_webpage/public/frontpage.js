@@ -1,5 +1,7 @@
+const date = new Date();
+
 function todaysDate() {
-    document.getElementById("date_id").innerText = "You know what time its is!:\n" + new Date().toDateString()
+    document.getElementById("date_id").innerText = "The current day and time is:\n" + date;
 }
 
 todaysDate()
