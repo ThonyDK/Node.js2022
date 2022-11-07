@@ -30,10 +30,10 @@ app.get("/deers/:id", (req, res) => {
 });
 
 app.get("/actors", (req, res) => {
-    console.log(req.query.name);
+    //console.log(req.query.name);
     res.send({
         message: "Information about the actor",
-        ...req.query
+        //...req.query
     });
 });
 
@@ -55,7 +55,20 @@ app.post("/actors", (req, res) => {
     console.log(req.body);
     res.send({data: req.body})
 });
+// http://localhost:8080/lookunderthebed?flashlight=true 
+// ovenstående udskriver You are safe 
+// return statementet gør at den ikke hopper videre ned til res.redirect og derfra over til monsters. 
+app.get("/lookunderthebed", (req, res) => {
+    if(req.query.flashlight){
+        return res.send({ message: "You are safe" });
+    }
+    res.redirect("/monsters"); 
+    res.send({message: "Look under the bed"});
+});
 
+app.get("/monsters", (req, res) => {
+    res.send({ message: "Uh oh! Scary monsters!!!" });
+});
 //console.log(new Date());
 //console.log(new Date().toLocaleString());
 
