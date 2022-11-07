@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended : true }));
 app.use(express.static("public"));
 
 // Routers 
-// Når den er importeret og sat ind her i app.js så køre den som en form for middleware. 
+// Når den er importeret og sat ind i app.js så køre den som en form for middleware. 
 // Router bruges så der er struktur over de forskellige features et program måtte have. 
 // Det er en god måde så alle endpoints ikke ligger inde i app.js og fylder.  
 import pokemonRouter from "./routers/pokemonRouter.js" 
